@@ -5,6 +5,7 @@
     "require": {
         "ellislab/codeigniter": "3.*",
         "illuminate/database": "5.1.*",
-        "illuminate/events": "5.1.*"
+        "illuminate/events": "5.1.*",
+        "knplabs/knp-snappy": "*"
     }
 }
