@@ -1,2 +1,2 @@
 # ci-on-wings
-CodeIgniter Framework with Eloquent ORM, bootstrap, Grocery CRUD, 
+CodeIgniter Framework with Eloquent ORM (with events support), Datatables, Bootstrap, knplabs/Snappy
