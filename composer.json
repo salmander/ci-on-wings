@@ -1,0 +1,8 @@
+{
+    "description" : "CodeIgniter on Wings",
+	"name" : "salmander/ci-on-wings",
+	"license": "MIT",
+    "require": {
+        "ellislab/codeigniter": "3.*"
+    }
+}
