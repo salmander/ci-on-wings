@@ -1,5 +1,5 @@
 <?php
-
+defined('BASEPATH') OR exit('No direct script access allowed');
 /*
  * CI-on-Wings core menu model class
  * Extends Eloquent Model
@@ -41,5 +41,19 @@ class Menu extends Eloquent {
         }
         
         return $menu;
+    }
+    
+    public static function build()
+    {
+        Capsule::schema()->create('menus', function($table)
+        {
+            $table->increments('id');
+            $table->string('name', 80);
+            $table->string('url', 120);
+            $table->integer('parent_id')->default(0);
+            
+            $table->index('parent_id');
+
+        });
     }
 }
