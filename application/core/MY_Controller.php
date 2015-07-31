@@ -14,7 +14,6 @@ class MY_Controller extends CI_Controller {
         
         // Get all menu/submenu items
         $data['menu_items'] = Menu::get_menu_submenu();
-        //echo "<pre>", print_r($menu_items, true) , "</pre>";
         
         // Convert each item in $data to variable
         $this->load->vars($data);  
