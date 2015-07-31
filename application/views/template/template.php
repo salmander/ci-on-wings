@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <?php require_once 'header.php' ?>
-    </head>
+<?php require_once 'header.php' ?>
     <body>
-        <?php require_once 'nav_bar.php' ?>
+<?php require_once 'nav_bar.php' ?>
 
         <!-- Begin page content -->
         <div class="container">
-          <div class="page-header">
-            <h1><?= isset($heading) ? $heading : 'Did you forget to add "$heading" missing?' ?></h1>
-          </div>
-          <?= isset($main_content) ? $main_content : 'Missing body???' ?>
+            <div class="page-header">
+                <h1><?= isset($heading) ? $heading : 'Did you forget to add "$heading" missing?' ?></h1>
+            </div>
+            <?= isset($main_content) ? $main_content : 'Missing body???' ?>
         </div>
 
         <footer class="footer">
-            <?php require_once 'footer.php' ?>
+<?php require_once 'footer.php' ?>
         </footer>
 
         <!-- Bootstrap core JavaScript
