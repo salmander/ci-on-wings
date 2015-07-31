@@ -9,9 +9,9 @@
         <!-- Begin page content -->
         <div class="container">
           <div class="page-header">
-            <h1><?= ($heading) ?: 'Did you forget to add "$heading" missing?' ?></h1>
+            <h1><?= isset($heading) ? $heading : 'Did you forget to add "$heading" missing?' ?></h1>
           </div>
-          <?= ($main_content) ?: 'Missing body???' ?>
+          <?= isset($main_content) ? $main_content : 'Missing body???' ?>
         </div>
 
         <footer class="footer">
