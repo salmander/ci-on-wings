@@ -7,7 +7,7 @@
         <meta name="author" content="">
         <link rel="icon" href="favicon.ico">
 
-        <title><?= isset($heading) ? $heading : 'Did you forget to add "$heading" missing?' ?></title>
+        <title><?= isset($heading) ? $heading : 'Did you forget to add "$heading"?' ?></title>
 
         <!-- Bootstrap core CSS -->
         <?php echo link_tag('/assets/bootstrap/bootstrap-3.3.5-dist/css/bootstrap.min.css', 'stylesheet', 'text/css'); ?>

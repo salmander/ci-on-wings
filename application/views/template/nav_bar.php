@@ -12,7 +12,21 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
+                    <? foreach ($menu_items as $item): ?>
+                        <? if (count($item['sub_menus']) > 0): ?>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <? foreach ($item['sub_menus'] as $sm): ?>
+                                                <li><a href="<?= $sm['url'] ?>"><?= $sm['name'] ?></a></li>
+                                            <? endforeach ?>
+                                        </ul>
+                                    </li>
+                        <? else: ?>
+                            <li><a href="<?= $item['url'] ?>"><?= $item['name'] ?></a></li>
+                        <? endif ?>
+                    <? endforeach ?>
+<!--                        <li class="active"><a href="#">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li class="dropdown">
@@ -26,7 +40,7 @@
                                 <li><a href="#">Separated link</a></li>
                                 <li><a href="#">One more separated link</a></li>
                             </ul>
-                        </li>
+                        </li>-->
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
