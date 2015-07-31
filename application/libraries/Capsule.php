@@ -13,7 +13,7 @@ class Capsule extends CapsuleManager {
         // Get CI instance to obtain DB settings
         $ci = &get_instance();
         $this->addConnection(array(
-            'driver'    => $ci->db->dbdriver,
+            'driver'    => 'mysql',
             'host'      => $ci->db->hostname,
             'database'  => $ci->db->database,
             'username'  => $ci->db->username,
